@@ -33,7 +33,7 @@ make
 // file onnx2trt and trt_infer will be generated
 sudo ./onnx2trt ../models/yolov5s-seg.onnx ../models/yolov5s-seg.engine
 // a file 'yolov5s-seg.engine' will be generated.
-```
+
 ### 3.Use tensorrt engine
 
 sudo ./trt_infer  ../models/yolov5s-seg.engine ../imagaes/street.jpg
