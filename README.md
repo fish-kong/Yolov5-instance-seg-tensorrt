@@ -48,3 +48,5 @@ for (int i = 0; i < 10; i++) {//计算10次的推理速度
 '''  
 The inference time is stable at 10ms  (gtx 1080ti)
 
+
+![image](https://github.com/fish-kong/Yolov5-instance-seg-tensorrt/blob/main/output.jpg)
