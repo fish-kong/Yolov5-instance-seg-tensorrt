@@ -37,16 +37,16 @@ sudo ./onnx2trt ../models/yolov5s-seg.onnx ../models/yolov5s-seg.engine
 ### 3.Use tensorrt engine
 
 sudo ./trt_infer  ../models/yolov5s-seg.engine ../imagaes/street.jpg  
-
+ 
 '''  
-for (int i = 0; i < 10; i++) {//计算10次的推理速度
-    auto start = std::chrono::system_clock::now();
-    doInference(*context, data, prob, prob1, 1);
-    auto end = std::chrono::system_clock::now();
-    std::cout << std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count() << "ms" << std::endl;
-}
-'''   
+for (int i = 0; i < 10; i++) {//计算10次的推理速度  
+    auto start = std::chrono::system_clock::now();  
+    doInference(*context, data, prob, prob1, 1);  
+    auto end = std::chrono::system_clock::now();  
+    std::cout << std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count() << "ms" << std::endl;  
+}  
+'''    
 The inference time is stable at 10ms  (gtx 1080ti)  
 
 
-![image](https://github.com/fish-kong/Yolov5-instance-seg-tensorrt/blob/main/output.jpg)
+![image](https://github.com/fish-kong/Yolov5-instance-seg-tensorrt/blob/main/output.jpg)  
