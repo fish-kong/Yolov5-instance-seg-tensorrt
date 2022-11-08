@@ -45,6 +45,6 @@ for (int i = 0; i < 10; i++) {//计算10次的推理速度
     auto end = std::chrono::system_clock::now();
     std::cout << std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count() << "ms" << std::endl;
 }
-'''
+'''  
 The inference time is stable at 10ms  (gtx 1080ti)
 
